@@ -1,5 +1,5 @@
 /*
-  Tic Tac Toe game - tictacto.c
+  Tic Tac Toe game - TICTACTO.C
   Author : Jayesh Kugsiya
   Email  : jkugsiya11@gmail.com
   This is a simple Tic Tac Toe game. I have used myconio.h that is not a part of
@@ -39,14 +39,14 @@ void showframe(int posx, int posy)
   int i,j,k,l;
 
   gotoxy(1,2);
-  for(k=0;k<6;k++)
+  for(k=0;k<9;k++)
   {
     for(l=0;l<9;l++)
     {
       printf("#");
     }
     printf("   ");
-    if(k==2)
+    if(k==2||k==5)
     printf("      ");
   }
   for(k=3;k<7;k++)
@@ -65,6 +65,14 @@ void showframe(int posx, int posy)
     printf("#");
     gotoxy(67,k);
     printf("#");
+    gotoxy(89,k);
+    printf("#");
+    gotoxy(97,k);
+    printf("#");
+    gotoxy(105,k);
+    printf("#");
+    gotoxy(109,k);
+    printf("#");
   }
   for(k=13;k<22;k++)
   {
@@ -75,6 +83,12 @@ void showframe(int posx, int posy)
     gotoxy(k+42,4);
     printf("#");
     gotoxy(k+54,6);
+    printf("#");
+    gotoxy(k+84,6);
+    printf("#");
+    gotoxy(k+96,6);
+    printf("#");
+    gotoxy(k+96,4);
     printf("#");
   }
 
