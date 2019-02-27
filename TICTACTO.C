@@ -39,13 +39,15 @@ void showframe(int posx, int posy)
   int i,j,k,l;
 
   gotoxy(1,2);
-  for(k=0;k<3;k++)
+  for(k=0;k<6;k++)
   {
     for(l=0;l<9;l++)
     {
       printf("#");
     }
     printf("   ");
+    if(k==2)
+    printf("      ");
   }
   for(k=3;k<7;k++)
   {
@@ -55,12 +57,24 @@ void showframe(int posx, int posy)
     printf("#");
     gotoxy(25,k);
     printf("#");
+    gotoxy(47,k);
+    printf("#");
+    gotoxy(54,k);
+    printf("#");
+    gotoxy(64,k);
+    printf("#");
+    gotoxy(67,k);
+    printf("#");
   }
   for(k=13;k<22;k++)
   {
     gotoxy(k,6);
     printf("#");
     gotoxy(k+12,6);
+    printf("#");
+    gotoxy(k+42,4);
+    printf("#");
+    gotoxy(k+54,6);
     printf("#");
   }
 
